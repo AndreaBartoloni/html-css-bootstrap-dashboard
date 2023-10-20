@@ -1,0 +1,60 @@
+:root {
+    --navbar-height: 5rem;
+}
+
+#app {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header {
+    height: var(--navbar-height);
+    width: 100%;
+}
+
+nav, main {
+    height: calc(100% - var(--navbar-height) );
+}
+
+nav {
+    background-color: #051f33;
+    width: 10rem;
+}
+.image_nav{
+    background-image: url(../img/sidebar-bg.png);
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+main {
+    width: calc(100% - 10rem);
+    overflow-y: auto;
+    
+}
+
+#main_header {
+    background-color: #165bba;
+    color: white;
+}
+
+.my_finta_card {
+    border: solid 1px #d2d2d2;
+}
+
+.my_searchbar {
+    background: gray;
+}
+
+.my_logo {
+    max-height: 3rem;
+}
+.icon{
+    height: 25px;
+}
+.icon_search{
+    filter: invert(1);
+    
+}
