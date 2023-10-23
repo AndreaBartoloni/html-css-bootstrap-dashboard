@@ -1,14 +1,36 @@
 :root {
     --navbar-height: 5rem;
 }
-
+.filter-invert{
+    filter: invert(1);
+}
+td{
+    font-size: 13px !important;
+}
+td > img{
+    height: 30px;
+}
+h2{
+    display: inline;
+}
+h3{
+    background-color: #f5f5f5;
+}
+.new_student{
+    border: 1px solid white;
+}
+.new_student > img{
+    filter: invert(1);
+}
+.offcanvas{
+    width: 50% !important;
+}
 #app {
     height: 100vh;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
-
 header {
     height: var(--navbar-height);
     width: 100%;
@@ -27,20 +49,28 @@ nav {
     height: 100%;
     background-size: contain;
     background-repeat: no-repeat;
+    position: relative;
 }
-
+.admin{
+    position: absolute;
+    bottom: 15px;
+    width: 10rem;
+}
+.admin > img{
+    height: 15px;
+    
+}
 main {
     width: calc(100% - 10rem);
     overflow-y: auto;
     
 }
-
 #main_header {
     background-color: #165bba;
     color: white;
 }
 
-.my_finta_card {
+.card {
     border: solid 1px #d2d2d2;
 }
 
@@ -52,9 +82,28 @@ main {
     max-height: 3rem;
 }
 .icon{
-    height: 25px;
+    height: 20px;
+    
 }
 .icon_search{
     filter: invert(1);
     
 }
+.badge > img{
+    height: 10px;
+}
+@media screen and (max-width:992px) {
+    nav {
+        background-color: #051f33;
+        width: 5rem;
+    }
+    main {
+        width: calc(100% - 5rem);
+        overflow-y: auto;
+        
+    }
+    .admin{
+    width: 5rem;
+    
+    }
+} 
